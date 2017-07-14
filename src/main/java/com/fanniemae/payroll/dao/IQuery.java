@@ -11,4 +11,8 @@ public interface IQuery <T> {
 
 		return null;
 }
+	default public T findBykey(String key)
+	{
+		return null;
+	}
 }

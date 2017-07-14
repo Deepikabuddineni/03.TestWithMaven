@@ -30,4 +30,22 @@ public class CountryRepository extends AbstractSQLDAO implements IQuery<Country>
 		
 	}
 
+	@Override
+	public Country findBykey(String key) {
+		String sql = "select code, name, population from Country where code = '" 
+				    + key + "'";
+				   
+		System.out.println(sql);
+		super.process(sql);
+		
+		Country country = list.get(0);
+		return country;
+		
+	
+		
+	}
+	
+	
+	
+
 }
