@@ -11,7 +11,6 @@ public class DriverCityRepository {
 		//dao.findAll().forEach(System.out::println);
 		
 		City city = dao.findBykey("100");
-		
 		System.out.println(city);
 
 	}
